@@ -1,0 +1,18 @@
+why do we need Os?
+we need an os as it manages hardware and software  resources efficiently and handles tasks like nenory maanagement,process scheduling tasks management allowing multiple application to run efficiently .without os user would have to manually control hardware,making the system estremly diffucit to use and manage.
+
+For instance, in a multi-tasking environment, the OS ensures that CPU time is shared fairly among multiple applications without any crashing — something that's nearly impossible without an OS.
+
+#Types of os:
+
+1) Single process os:Only one process can be executed at a time.
+
+2) Batch os:A Batch os similar jobs are grouped together and processed in batches without user interaction. The jobs are submitted to the system using punch cards or similar input, and then executed sequentially.
+
+3) Multiprogramming OS:A Multiprogramming Operating System allows multiple programs to reside in memory at the same time, enabling the CPU to switch between them to maximize resource utilization.
+
+4)MultiTasking:A Multitasking Operating System allows multiple tasks (or processes) to run simultaneously by rapidly switching the CPU between them. It gives users the perception that all tasks are running at the same time.
+
+5)A Multiprocessor Operating System is designed to support and manage systems with more than one CPU (Central Processing Unit), enabling the system to execute multiple processes simultaneously by distributing them across multiple processors
+
+6)Distributed Operating System:A Distributed Operating System manages a group of independent computers and makes them appear to users as a single unified system. The OS coordinates multiple machines to share resources, communicate, and process tasks collaboratively.
