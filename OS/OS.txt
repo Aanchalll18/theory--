@@ -1,4 +1,5 @@
 why do we need Os?
+
 we need an os as it manages hardware and software  resources efficiently and handles tasks like nenory maanagement,process scheduling tasks management allowing multiple application to run efficiently .without os user would have to manually control hardware,making the system estremly diffucit to use and manage.
 
 For instance, in a multi-tasking environment, the OS ensures that CPU time is shared fairly among multiple applications without any crashing — something that's nearly impossible without an OS.
@@ -16,3 +17,13 @@ For instance, in a multi-tasking environment, the OS ensures that CPU time is sh
 5)A Multiprocessor Operating System is designed to support and manage systems with more than one CPU (Central Processing Unit), enabling the system to execute multiple processes simultaneously by distributing them across multiple processors
 
 6)Distributed Operating System:A Distributed Operating System manages a group of independent computers and makes them appear to users as a single unified system. The OS coordinates multiple machines to share resources, communicate, and process tasks collaboratively.
+
+7)A Real-Time Operating System (RTOS) is designed to process data and execute tasks within a guaranteed time frame. It is used in systems where timing and predictability are critical
+
+#Multiprogramming vs MultiTasking:
+"Multiprogramming improves CPU efficiency by loading multiple programs into memory, (no time sharing)
+whereas Multitasking improves user experience by letting multiple tasks run apparently at the same time.(time sharing)"
+
+#Multiprogramming vs Multiprocessor
+"Multiprogramming improves CPU utilization by keeping the CPU busy with one process while others wait for I/O. In contrast, multiprocessor systems use multiple CPUs to execute processes truly in parallel, boosting performance and reliability."
+
