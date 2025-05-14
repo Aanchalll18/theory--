@@ -1,0 +1,7 @@
+Program: It is an executable file,which contains some set of operation to be performed
+
+Process: It is an instance of program under execution.
+
+#PCB
+The Process Control Block (PCB) is a data structure used by the Operating System to store all the essential information about a process. It acts like a “record card” that helps the OS manage and track each process.
+
