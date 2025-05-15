@@ -1,0 +1,21 @@
+
+Joins in SQL are used to combine rows from two or more tables based on a related column between them.
+
+1. INNER JOIN
+An INNER JOIN returns only the matched rows from both the tables
+
+2. LEFT JOIN (or LEFT OUTER JOIN)
+A LEFT JOIN returns all
+ rows from the left table and the matched rows from the right table. If there is no match, NULL values will be returned for columns of the right table.
+
+3. RIGHT JOIN (or RIGHT OUTER JOIN)
+A RIGHT JOIN returns all rows from the right table and the matched rows from the left table.If there is no match, NULL values will be returned for columns of the left table.
+
+4. CROSS JOIN
+A CROSS JOIN returns all possible combinations of rows from both tables (Cartesian product).
+
+5. SELF JOIN
+A SELF JOIN is when a table is joined with itself to compare rows within the same table
+
+6.FULL OUTER JOIN
+A FULL OUTER JOIN returns all rows from both tables, including matched rows as well as unmatched rows from either table. For unmatched rows, the columns of the other table will return null.
