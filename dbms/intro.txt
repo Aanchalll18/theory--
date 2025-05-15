@@ -32,3 +32,13 @@ Network DBMS: Data is represented as a graph with many-to-many relationships.
 Relational DBMS (RDBMS): Data is organized in tables (relations) and managed through SQL.
 
 Object-Oriented DBMS: Data is stored as objects, like in object-oriented programming
+
+✅ Q: What is a relation in DBMS? 
+In DBMS, a relation refers to a table that stores data in rows and columns
+
+✅ Q: What is a table in DBMS?
+In DBMS, a table is a collection of related data entries organized in rows and columns.
+
+✅ Q: What are rows and columns in a DBMS?
+Rows (Tuples): A row represents a single record or entity.
+Columns (Attributes): A column represents a property or characteristic of the entity.

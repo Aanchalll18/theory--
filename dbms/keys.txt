@@ -1,0 +1,14 @@
+✅ Primary Key:
+"A primary key is a column or a combination of columns that uniquely identifies each row in a table and does not allow NULL or duplicate values."
+
+✅ Foreign Key:
+"A foreign key is a column or a set of columns in one table that establishes a link between data in two tables. It refers to the primary key in another table, enforcing referential integrity."
+
+✅ Candidate Key:
+"A candidate key is a column, or a set of columns, that can uniquely identify a record in a table. Each candidate key is a potential primary key, but only one is chosen as the primary key."
+
+✅ Super Key:
+"A super key is any combination of columns that can uniquely identify a record in a table. It may contain extra attributes that are not necessary for uniqueness."
+
+✅ Composite Key:
+"A composite key is a combination of two or more columns in a table that together uniquely identify a row."
