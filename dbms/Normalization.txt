@@ -1,0 +1,44 @@
+✅ What is Normalization?
+"Normalization is the process of organizing data in a database to reduce redundancy and improve data integrity."
+
+💡 Benefits of Normalization:
+
+1>Reduces data redundancy.
+2>Improves data consistency and integrity.
+3>Makes data maintenance easier.
+
+✅ What is 1NF (First Normal Form)?
+A table is in First Normal Form (1NF) if:
+
+1>All attributes (columns) contain only atomic (indivisible) values.
+
+2>Each record (row) is uniquely identifiable, usually by a primary key.
+
+✅ What is 2NF (Second Normal Form)?
+A table is in 2NF if:
+
+It is in 1NF, and
+All non-key attributes are fully functionally dependent on the entire primary key, not just a part of it.
+
+✅ What is 3NF (Third Normal Form)?
+Definition:
+A table is in 3NF if:
+
+It is in 2NF, and
+
+There is no transitive dependency between non-key attributes.
+
+⚠️ A transitive dependency occurs when a non-prime attribute depends on another non-prime attribute, rather than directly on the primary key.
+
+✅ What is BCNF (Boyce-Codd Normal Form)?
+Definition:
+A table is in BCNF if:
+
+It is in 3NF, and
+For every functional dependency X → Y, X is a superkey.
+In simpler terms, every determinant must be a candidate key.
+
+Why BCNF?
+Sometimes, even tables in 3NF may have anomalies if there are multiple candidate keys with overlapping attributes. BCNF is a stricter form of 3NF that resolves such issues.
+
+Denormalization is the process of combining tables to improve query performance, often by introducing redundancy. 
