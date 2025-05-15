@@ -7,7 +7,7 @@ A view is a virtual table that is derived from one or more base tables using a S
 
 ✅ What are the different types of relationships in DBMS?
 
-1. One-to-One (1:1)
+ 1. One-to-One (1:1)
  One record table is associated with a single record in another table, and vice versa.
  eg:person has a passport
 
@@ -15,4 +15,16 @@ A view is a virtual table that is derived from one or more base tables using a S
  One record in Table is associated with multiple records in another table.
 
  3. Many-to-Many (M:N)
- Multiple records in one table are associated with multiple records in another table..
+ Multiple records in one table are associated with multiple records in another table.
+
+ ✅ Explain the concept of a Schema in DBMS.
+A schema in DBMS is the logical structure that defines how data is organized in a database. It acts as a blueprint for a database, specifying the tables, fields, data types, relationships, constraints, indexes.
+
+✅ What are Constraints in DBMS?
+Constraints in DBMS are rules that limit the type of data that can be inserted into a table to ensure data integrity and consistency. Common types of constraints include: NOT NULL, PRIMARY KEY, FOREIGN KEY, UNIQUE, CHECK, DEFAULT.
+
+
+✅What is the difference between DELETE and TRUNCATE in SQL?
+DELETE is used to remove specific rows from a table using a WHERE clause and can be rolled back. TRUNCATE removes all rows from a table without using WHERE, is faster, and usually cannot be rolled back
+
+
