@@ -5,3 +5,13 @@ Process: It is an instance of program under execution.
 #PCB
 The Process Control Block (PCB) is a data structure used by the Operating System to store all the essential information about a process. It acts like a “record card” that helps the OS manage and track each process.
 
+-----------------------------------------------------
+| 🆕 **New**                                              | Process is being created (has not started execution yet)                   |
+| ⚙️ **Ready**                                            | Process is loaded into memory and **waiting to be assigned** to the CPU    |
+| ▶️ **Running**                                          | Process is currently being executed by the CPU                         |
+| ⏸️
+**Waiting**                                          | Process is waiting for(I/O or an event)to occur (e.g., keyboard input) |
+| ✅ **Terminated**                                        | Process has(finished execution)or was **killed**                       |
+| 🔁 **Ready Suspended / Blocked Suspended** *(optional)* | Some systems also support advanced states for suspended processes          |
+
+

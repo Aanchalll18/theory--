@@ -1,0 +1,20 @@
+What is the difference between DBMS and RDBMS?
+
+What is SQL?
+
+What is a primary key and foreign key?
+
+What are joins in SQL?
+
+What is normalization?
+
+What is indexing?
+
+What is ACID in databases?
+
+What are NoSQL databases?
+
+Difference between WHERE and HAVING clause?
+
+What is a subquery?
+
