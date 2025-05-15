@@ -27,4 +27,19 @@ Constraints in DBMS are rules that limit the type of data that can be inserted i
 ✅What is the difference between DELETE and TRUNCATE in SQL?
 DELETE is used to remove specific rows from a table using a WHERE clause and can be rolled back. TRUNCATE removes all rows from a table without using WHERE, is faster, and usually cannot be rolled back
 
+✅ What is an index in DBMS and how is it used?
+An index is a data structure that improves the speed of data retrieval operations on a table. instead of scanning every row, the database uses the index to directly locate the required data.
 
+✅What is the role of the Database Administrator (DBA)?
+
+Key duties include:
+
+Managing database access and permissions
+
+Monitoring performance and tuning queries
+
+Planning and implementing backups and recovery
+
+Designing database schemas and ensuring data integrity
+
+Troubleshooting database issues and ensuring availability
