@@ -1,0 +1,18 @@
+✅  What is a View in SQL?
+ What is the use of the SQL SELECT statement?
+The SELECT statement is used to query data from one or more tables
+
+✅  What is a View in SQL?
+A view is a virtual table that is derived from one or more base tables using a SQL query. It does not store the data physically but shows data dynamically based on the underlying tables.
+
+✅ What are the different types of relationships in DBMS?
+
+1. One-to-One (1:1)
+ One record table is associated with a single record in another table, and vice versa.
+ eg:person has a passport
+
+ 2. One-to-Many (1:N)
+ One record in Table is associated with multiple records in another table.
+
+ 3. Many-to-Many (M:N)
+ Multiple records in one table are associated with multiple records in another table..
