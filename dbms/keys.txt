@@ -12,3 +12,4 @@
 
 ✅ Composite Key:
 "A composite key is a combination of two or more columns in a table that together uniquely identify a row."
+
