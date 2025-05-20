@@ -1,0 +1,218 @@
+//single inheritance
+
+#include <iostream>
+using namespace std;
+
+class Person {
+public:
+    void displayPerson() {
+        cout << "I am a person." << endl;
+    }
+};
+
+class Employee : public Person {
+public:
+    void displayEmployee() {
+        cout << "I am an employee." << endl;
+    }
+};
+
+int main() {
+    Employee emp;
+    emp.displayPerson();    // inherited
+    emp.displayEmployee();  // own
+    return 0;
+}
+
+//Multiple inheritance
+
+#include <iostream>
+using namespace std;
+
+class Manager {
+public:
+    void manageTeam() {
+        cout << "Managing a team." << endl;
+    }
+};
+
+class Coder {
+public:
+    void writeCode() {
+        cout << "Writing code." << endl;
+    }
+};
+
+class TechLead : public Manager, public Coder {
+public:
+    void leadProject() {
+        cout << "Leading the project." << endl;
+    }
+};
+
+int main() {
+    TechLead lead;
+    lead.manageTeam();   // from Manager
+    lead.writeCode();    // from Coder
+    lead.leadProject();  // own
+    return 0;
+}
+
+//Multilevel
+#include <iostream>
+using namespace std;
+
+class Person {
+public:
+    void displayPerson() {
+        cout << "I am a person." << endl;
+    }
+};
+
+class Employee : public Person {
+public:
+    void displayEmployee() {
+        cout << "I am an employee." << endl;
+    }
+};
+
+class Developer : public Employee {
+public:
+    void displayDeveloper() {
+        cout << "I am a developer." << endl;
+    }
+};
+
+int main() {
+    Developer dev;
+    dev.displayPerson();     // from Person
+    dev.displayEmployee();   // from Employee
+    dev.displayDeveloper();  // own
+    return 0;
+}
+
+//Heirarchical
+
+#include <iostream>
+using namespace std;
+
+class Person {
+public:
+    void introduce() {
+        cout << "I am a person." << endl;
+    }
+};
+
+class Developer : public Person {
+public:
+    void develop() {
+        cout << "I develop software." << endl;
+    }
+};
+
+class Manager : public Person {
+public:
+    void manage() {
+        cout << "I manage projects." << endl;
+    }
+};
+
+int main() {
+    Developer dev;
+    Manager mgr;
+
+    dev.introduce();  // inherited
+    dev.develop();    // own
+
+    mgr.introduce();  // inherited
+    mgr.manage();     // own
+    return 0;
+}
+
+//Hybrid
+#include <iostream>
+using namespace std;
+
+class Person {
+public:
+    void showPerson() {
+        cout << "Base: Person" << endl;
+    }
+};
+
+class Employee : virtual public Person {
+public:
+    void showEmployee() {
+        cout << "Derived: Employee" << endl;
+    }
+};
+
+class Developer : virtual public Person {
+public:
+    void showDeveloper() {
+        cout << "Derived: Developer" << endl;
+    }
+};
+
+class TechLead : public Employee, public Developer {
+public:
+    void showTechLead() {
+        cout << "Derived: TechLead" << endl;
+    }
+};
+
+int main() {
+    TechLead lead;
+    lead.showPerson();     // No ambiguity due to virtual inheritance
+    lead.showEmployee();
+    lead.showDeveloper();
+    lead.showTechLead();
+    return 0;
+}
+
+
+//Function_Overloading
+#include <iostream>
+using namespace std;
+
+class Printer {
+public:
+    void print(int num) {
+        cout << "Printing int: " << num << endl;
+    }
+
+    void print(string text) {
+        cout << "Printing string: " << text << endl;
+    }
+};
+
+int main() {
+    Printer p;
+    p.print(5);
+    p.print("Hello");
+}
+
+//overriding
+#include <iostream>
+using namespace std;
+
+class Animal {
+public:
+    virtual void speak() {
+        cout << "Animal speaks" << endl;
+    }
+};
+
+class Dog : public Animal {
+public:
+    void speak() override {
+        cout << "Dog barks" << endl;
+    }
+};
+
+int main() {
+    Animal* a;
+    Dog d;
+    a = &d;
+    a->speak();  // Calls Dog's version due to polymorphism
+}

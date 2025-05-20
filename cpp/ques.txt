@@ -1,0 +1,213 @@
+✅What is C++? How is it different from C?
+
+✅What are the basic data types in C++?
+
+✅Explain type casting in C++.
+
+✅What is the difference between = and ==?
+
+✅What is the difference between a header file and a source file?
+
+✅How do you write a "Hello World" program in C++?
+
+✅What is the difference between endl and \n?
+
+endl~Inserts a newline and flushes the output buffer
+/n~Inserts just a newline character
+Flushing the output buffer means forcing all buffered output to be sent immediately to the terminal or screen.
+
+✅Explain the scope and lifetime of a variable.
+Scope defines where a variable can be accessed in the code, while lifetime refers to how long it stays in memory
+
+✅What is the const keyword used for?
+const in C++ is used to make variables, pointers, function parameters, and member functions immutable — meaning they cannot be changed after being defined
+
+✅What is a namespace? Why is it used?
+“A namespace in C++ is used to group related identifiers like functions, variables, or classes under a unique name. It helps prevent naming conflicts, especially when using multiple libraries.
+
+✅What is the main() function signature in C++?
+The main() function is the entry point of a C++ program. It’s the first function that runs when the program starts.
+"The standard signature for the main function in C++ is either int main() or int main(int argc, char* argv[])
+
+✅What are inline functions?
+An inline function in C++ is a function where the compiler tries to replace the function call with the actual code of the function during compilation. This helps reduce the overhead of function calls, especially for small functions
+
+✅What is a macro in C++?
+A macro is a preprocessor directive that defines a name or expression which is replaced by code before compilation.
+
+Macros are handled by the preprocessor, not the compiler.
+
+✅How is memory allocated for variables in C++?
+"In C++, memory for variables is allocated in different ways. Local variables are stored on the stack and are automatically managed — their memory is released when they go out of scope. For dynamic memory allocation, we use new to allocate memory on the heap, and delete to release it. Global and static variables are stored in a separate memory area called the data segment, and their lifetime spans the entire program
+
+✅Difference between compile-time and run-time errors.
+Compile-time errors are detected by the compiler before the program runs. These include syntax errors, undeclared variables, and type mismatches, and they prevent the program from compiling. Run-time errors occur while the program is running, such as dividing by zero, accessing invalid memory, or file handling failures. Compile-time errors must be fixed in the code, while run-time errors should be handled using proper validations or exception handling.
+
+✅What are classes and objects in C++?
+
+✅What is the difference between public, private, and protected access?
+
+✅What is encapsulation?
+
+✅What is inheritance? Types of inheritance?
+
+✅What is polymorphism? Types of polymorphism?
+
+✅What is abstraction? How is it implemented in C++?
+Abstraction in C++ is the concept of hiding complex implementation details and showing only the necessary features to the user. It's implemented using classes and access specifiers by keeping data private and exposing only essential methods. We also achieve abstraction using abstract classes and pure virtual functions — which define an interface that must be implemented by derived classes.
+
+✅What is the difference between function overloading and overriding?
+
+Function overloading means having multiple functions with the same name but different parameter types or numbers in the same class.
+It allows the same function to work differently based on input and is resolved at compile-time.
+
+Function overriding means redefining a base class's virtual function in the derived class using the same function name and parameters.
+It is used for runtime polymorphism and is resolved at run-time.
+
+
+✅What are constructors? Types?
+
+✅What is a destructor?
+
+✅What is the use of this pointer?
+It points to the current object that invoked the function and is mainly used to access or distinguish class members from local variables.
+
+✅What is the friend function and class?
+
+Friend Function:
+A friend function is a non-member function that is granted access to the private and protected members of a class using the friend keyword.
+
+Friend Class:
+A friend class is a class that can access private and protected members of another class, as declared using the friend keyword.
+
+✅What is operator overloading? Provide examples.
+
+✅What is dynamic binding?
+
+✅What is the difference between early and late binding?
+
+Early binding means the function call is resolved at compile-time. It happens with non-virtual functions and is used in function overloading and normal function calls.
+
+Late binding means the function call is resolved at runtime. It happens with virtual functions and enables runtime polymorphism, such as when calling overridden methods through base class pointers.
+
+✅What is a copy constructor?
+
+✅What is the rule of three/five/zero?
+
+✅What is shallow copy vs deep copy?
+
+✅What is dynamic memory allocation in C++?
+
+Dynamic memory allocation means allocating memory at runtime using pointers 
+It allows you to request memory from the heap during program execution,
+
+✅Difference between new and delete, malloc and free.
+"new and delete are C++ operators that allocate and free memory, and also call constructors and destructors respectively.
+malloc and free are C functions that only allocate and free raw memory without calling constructors or destructors.
+In C++, new/delete are preferred because they are type-safe and handle object initialization and cleanup automatically."
+
+int* p = new int;       // allocates memory for a single int (uninitialized)
+int* q = new int(10);   // allocates and initializes with 10
+
+✅What is a memory leak? How can it be avoided?
+A memory leak occurs when a program allocates memory dynamically (using new or malloc) but fails to release it (using delete or free), causing the memory to remain occupied and unavailable for reuse even after it’s no longer needed.
+
+✅What are smart pointers?
+Smart pointers are template classes in C++ that manage dynamic memory automatically.
+They act like regular pointers but automatically delete the object they point to when it’s no longer needed, preventing memory leaks and dangling pointers.
+
+✅What are unique_ptr, shared_ptr, and weak_ptr?
+
+A smart pointer that owns a resource exclusively. It cannot be copied, only moved, ensuring only one owner exists. Automatically deletes the resource when it goes out of scope.
+
+shared_ptr:
+A smart pointer that allows multiple owners by maintaining a reference count. The resource is deleted only when the last shared_ptr owning it is destroyed.
+
+weak_ptr:
+A smart pointer that holds a non-owning ("weak") reference to a resource managed by shared_ptr. It does not affect the reference count and is used to prevent cyclic references.
+
+✅What happens if you delete the same pointer twice?
+
+✅What is the use of destructors with dynamic memory?
+
+✅What is a reference? How is it different from a pointer?
+Reference:
+A reference is an alias for an existing variable. It must be initialized when declared, cannot be null, and cannot be changed to refer to another variable.
+
+Pointer:
+A pointer is a variable that stores the memory address of another variable. It can be null, can be reassigned, and requires explicit dereferencing to access the value.
+
+✅What is a dangling pointer?
+
+✅What is a NULL pointer?
+
+✅Can you return a pointer from a function?
+
+✅What is pointer arithmetic?
+
+✅What is the use of void*?
+
+✅What is const int*, int* const, and const int* const?
+
+✅How do you swap two variables using pointers?
+
+✅How does pointer to an array differ from array of pointers?
+
+✅What is STL in C++?
+
+✅What are the components of STL?
+
+✅What is the difference between vector and list?
+
+✅What are iterators?
+
+✅How does std::map differ from unordered_map?
+
+✅What are functors?
+
+✅What is the use of pair in STL?
+
+✅What is the difference between push_back() and emplace_back()?
+
+✅How do you sort a vector of custom objects?
+
+✅How to find an element in a container using STL?
+
+✅What is auto keyword?
+
+✅What is nullptr and how is it different from NULL?
+
+✅What is a lambda function?
+
+✅What is constexpr?
+
+✅What are move semantics?
+
+✅What is std::move()?
+
+✅What are rvalue and lvalue references?
+
+✅What is decltype used for?
+
+✅What are range-based for loops?
+
+✅What are enum class and strongly typed enums?
+
+✅What is class template?
+
+✅What is template specialization?
+
+✅What is function overloading?
+
+✅What is default argument in functions?
+
+✅Can main() be overloaded in C++?
+
+✅What is recursion? Write a recursive function.
+
+✅Difference between call by value and call by reference?
+
+✅What are inline functions?
+
+✅What is function pointer?
+

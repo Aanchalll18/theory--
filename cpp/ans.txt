@@ -1,0 +1,3 @@
+why cpp??
+I chose C++ because it was the first language I learned in my academics.
+As I spent more time coding in C++, I found that it really helped me build a clear understanding of fundamental programming concepts like loops, conditions, arrays, and especially object-oriented programming.
